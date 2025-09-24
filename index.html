@@ -40,33 +40,39 @@
 	<!--Schema.org-->
 	<script type="application/ld+json">
 		{
-		  "@context": "http://schema.org",
-		  "@type": "ProfessionalService",
-		  "name": "Nina Carducci",
-		  "alternateName": "Photographer",
-		  "image": "./assets/images/nina.png",
-		  "url": "https://ninacarducci.github.io/",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "Bordeaux",
-			"postalCode": "33200",
-			"addressRegion": "Gironde",
-			"addressCountry": "FR"
-		  },
-		  "telephone": "05 56 67 78 89",
-		  "openingHoursSpecification": [{
-			  "@type": "OpeningHoursSpecification",
-			  "dayOfWeek": [
-				"Monday",
-				"Tuesday",
-				"Wednesday",
-				"Thursday",
-				"Friday"
-			  ],
-			  "opens": "10:00",
-			  "closes": "19:00"
-			}]
+			"@context": "http://schema.org",
+			"@type": "ProfessionalService",
+			"name": "Nina Carducci",
+			"alternateName": "Photographer",
+			"image": "./assets/images/nina.png",
+			"url": "https://ninacarducci.github.io/",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressRegion": "Gironde",
+				"addressCountry": "FR"
+			},
+			"telephone": "05 56 67 78 89",
+			"openingHoursSpecification": [{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+				],
+				"opens": "10:00",
+				"closes": "19:00" 
+				}],
+			"priceSpecification": {
+			"@type": "PriceSpecification",
+			"minPrice": "50",
+			"maxPrice": "400",
+			"priceCurrency": "EUR"
+			}
 		}
 	</script>
 </head>
