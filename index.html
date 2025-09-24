@@ -2,24 +2,77 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<!-- Titre & description -->
+	<title>Nina Carducci</title>
 	<meta name="description" 
 	content="Portfolio de la photographe professionnelle Nina Craducci. Originaire de Bordeaux, Nina est spécialisée dans les photos de concerts, entreprises, portrait ou encore photos de mariages.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Styles -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
+
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+
 	<!-- Scripts -->
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
-	<title>Nina Carducci</title>
+
+	<!-- Balises meta reseaux sociaux -->
+	<meta property="og:title" content="Nina Carducci - Photographe" />
+	<meta property="og:url" content="https://nina_carducci.github.io/" />
+	<meta property="og:description" content="Portfolio de Nina Carducci" />
+	<meta property="og:site_name" content="Nina Carducci" />
+	<meta property="og:type" content="website" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle">
+	<meta name="twitter:description" content="Portfolio de Nina Carducci">
+	<meta name="twitter:image" content="https://exemple.com/image.jpg">
+	<meta name="twitter:site" content="@NinaCarducci">
+	<meta name="twitter:url" content="https://ninacarducci.github.io/">
+
+	<!--Schema.org-->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "ProfessionalService",
+		  "name": "Nina Carducci",
+		  "alternateName": "Photographer",
+		  "image": "./assets/images/nina.png",
+		  "url": "https://ninacarducci.github.io/",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressRegion": "Gironde",
+			"addressCountry": "FR"
+		  },
+		  "telephone": "05 56 67 78 89",
+		  "openingHoursSpecification": [{
+			  "@type": "OpeningHoursSpecification",
+			  "dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			  ],
+			  "opens": "10:00",
+			  "closes": "19:00"
+			}]
+		}
+	</script>
 </head>
+
 <body>
+<!-- Top header -->
 <header class="top-header">
 	<h1 class="name">Nina Carducci</h1>
 	<nav aria-label="Navigation" class="nav">   
@@ -32,8 +85,9 @@
 		</ul>
 	</nav>
 </header>
-<div id="header">
 
+<!-- Slider -->
+<div id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,13 +96,13 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="Un homme d'affaire">
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Un homme d'affaire">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="Le public d'un concert">
+				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Le public d'un concert">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="Des mariés">
+				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Des mariés">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Precedent">
@@ -59,9 +113,11 @@
 		</button>
 	</div>
 </div>
+
+<!-- A propos -->
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png" alt="Photo de Nina Carducci">
+		<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -70,6 +126,8 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+
+<!-- Gallerie -->
 <main id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
@@ -85,6 +143,7 @@
 			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Un sourire en entreprise"/>
 		</div>
 	</div>
+
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -94,6 +153,8 @@
 		</figure>
 	</div>
 </main>
+
+<!-- Services -->
 <div id="services">
 	<h3 class="title">Mes services</h3>
 	<div class="container">
@@ -138,6 +199,8 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+
+<!-- Formulaire contact -->
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
@@ -154,7 +217,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png" alt="Un appareil photo">
+			<img src="./assets/images/camera.webp" alt="Un appareil photo">
 		</div>
 	</div>
 </div>
